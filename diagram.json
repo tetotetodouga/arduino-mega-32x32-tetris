@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "author": "teto",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-mega", "id": "mega", "top": 77.4, "left": -42, "attrs": {} },
+    {
+      "type": "wokwi-max7219-matrix",
+      "id": "row0",
+      "top": -258.6,
+      "left": -194.16,
+      "attrs": { "chain": "4", "color": "red", "layout": "parola" }
+    },
+    {
+      "type": "wokwi-max7219-matrix",
+      "id": "row1",
+      "top": -181.8,
+      "left": -194.16,
+      "attrs": { "chain": "4", "color": "red", "layout": "parola" }
+    },
+    {
+      "type": "wokwi-max7219-matrix",
+      "id": "row2",
+      "top": -105,
+      "left": -194.16,
+      "attrs": { "chain": "4", "color": "red", "layout": "parola" }
+    },
+    {
+      "type": "wokwi-max7219-matrix",
+      "id": "row3",
+      "top": -28.2,
+      "left": -194.16,
+      "attrs": { "chain": "4", "color": "red", "layout": "parola" }
+    },
+    {
+      "type": "wokwi-analog-joystick",
+      "id": "joystick",
+      "top": 76.2,
+      "left": -157.8,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -132,
+      "left": -286.2,
+      "attrs": { "volume": "0.1" }
+    }
+  ],
+  "connections": [
+    [ "row0:VCC", "mega:5V", "red", [] ],
+    [ "row0:GND", "mega:GND.1", "black", [] ],
+    [ "row0:DIN", "mega:51", "green", [] ],
+    [ "row0:CLK", "mega:52", "green", [] ],
+    [ "row0:CS", "mega:53", "green", [] ],
+    [ "row1:VCC", "mega:5V", "red", [] ],
+    [ "row1:GND", "mega:GND.1", "black", [] ],
+    [ "row1:DIN", "mega:51", "green", [] ],
+    [ "row1:CLK", "mega:52", "green", [] ],
+    [ "row1:CS", "mega:49", "green", [] ],
+    [ "row2:VCC", "mega:5V", "red", [] ],
+    [ "row2:GND", "mega:GND.1", "black", [] ],
+    [ "row2:DIN", "mega:51", "green", [] ],
+    [ "row2:CLK", "mega:52", "green", [] ],
+    [ "row2:CS", "mega:48", "green", [] ],
+    [ "row3:VCC", "mega:5V", "red", [] ],
+    [ "row3:GND", "mega:GND.1", "black", [] ],
+    [ "row3:DIN", "mega:51", "green", [] ],
+    [ "row3:CLK", "mega:52", "green", [] ],
+    [ "row3:CS", "mega:47", "green", [] ],
+    [ "joystick:VCC", "mega:5V", "red", [] ],
+    [ "joystick:GND", "mega:GND.2", "black", [] ],
+    [ "joystick:VERT", "mega:A0", "blue", [] ],
+    [ "joystick:HORZ", "mega:A1", "blue", [] ],
+    [ "joystick:SEL", "mega:2", "yellow", [] ],
+    [ "bz1:1", "mega:6", "green", [] ],
+    [ "bz1:2", "mega:GND.3", "black", [] ]
+  ],
+  "dependencies": {}
+}
