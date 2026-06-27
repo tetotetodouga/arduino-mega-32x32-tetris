@@ -3,6 +3,7 @@
 A fully working Tetris game for **Arduino Mega** and a **32x32 MAX7219 LED matrix**.
 
 The project runs in **Wokwi** and uses a joystick for controls, a buzzer for sound effects, and EEPROM for saving the high score.
+https://wokwi.com/projects/468020337569547265
 
 ## Demo
 
